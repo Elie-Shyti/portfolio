@@ -1,167 +1,196 @@
 /* style.css */
 
-/* Couleurs et typographie futuristes avec une police plus lisible */
+/* Couleurs et typographie modernisées */
 body {
     margin: 0;
-    background: #0e0e12;
-    color: #e0e0e0;
+    /* Fond en dégradé, du bleu nuit au bleu profond */
+    background: linear-gradient(135deg, #141E30, #243B55);
+    color: #f0f0f0;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-}
+  }
   
-.container {
+  .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
-}
+  }
   
-/* Navigation */
-nav {
-    background: rgba(0, 0, 0, 0.8);
+  /* Navigation */
+  nav {
+    background: rgba(20, 30, 48, 0.9);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-}
+  }
   
-.nav-container {
+  .nav-container {
     display: flex;
     justify-content: center;
     padding: 15px 0;
-}
+  }
   
-nav a {
-    color: #e0e0e0;
+  nav a {
+    color: #f0f0f0;
     padding: 10px 15px;
     margin: 0 10px;
     text-decoration: none;
     font-weight: 700;
-    transition: all 0.3s ease;
-}
+    transition: background 0.3s ease;
+  }
   
-nav a:hover {
-    background: #1a1a2e;
+  nav a:hover {
+    background: rgba(26, 188, 156, 0.3);
     border-radius: 4px;
-}
+  }
   
-/* Header */
-header {
+  /* Header */
+  header {
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url('votre-image-futuriste.jpg') no-repeat center center/cover;
-}
+  }
   
-header .overlay {
+  header .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(10, 10, 20, 0.7);
+    background: rgba(20, 30, 48, 0.8);
     animation: pulse 5s infinite;
-}
+  }
   
-.header-container {
+  .header-container {
     position: relative;
     text-align: center;
     z-index: 1;
-}
+  }
   
-header h1 {
+  header h1 {
     font-size: 4em;
     margin: 0;
-}
+  }
   
-header p {
+  header p {
     font-size: 1.5em;
     margin-top: 10px;
-}
+  }
   
-/* Sections communes */
-.section {
+  /* Sections communes */
+  .section {
     padding: 100px 0;
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease-in-out;
-}
+  }
   
-.section.visible {
+  .section.visible {
     opacity: 1;
     transform: translateY(0);
-}
+  }
   
-h2 {
+  h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.5em;
-    color: #00d1b2;
-}
+    color: #1ABC9C;
+  }
   
-/* Cartes pour expériences, formations... */
-.card {
-    background: #1a1a2e;
+  /* Cartes pour expériences, formations... */
+  .card {
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-}
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
   
-/* Listes */
-ul {
+  /* Listes */
+  ul {
     list-style-type: disc;
     margin-left: 20px;
-}
+  }
   
-.skills-list {
+  .skills-list {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
   
-.skills-list li {
-    background: #00d1b2;
+  .skills-list li {
+    background: #1ABC9C;
     color: #0e0e12;
     margin: 5px;
     padding: 10px 20px;
     border-radius: 50px;
     font-weight: bold;
-}
+  }
   
-/* Liens */
-a {
-    color: #00d1b2;
+  /* Liens */
+  a {
+    color: #1ABC9C;
     text-decoration: none;
-}
+    transition: color 0.3s ease;
+  }
   
-a:hover {
+  a:hover {
     text-decoration: underline;
-}
+  }
   
-/* Footer */
-footer {
-    background: #1a1a2e;
+  /* Bouton téléchargement et projets */
+  .download-btn,
+  .project-btn {
+    display: inline-block;
+    background: #1ABC9C;
+    color: #0e0e12;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .download-btn:hover,
+  .project-btn:hover {
+    background: #16a085;
+  }
+  
+  /* Conteneur pour les boutons de projet */
+  .projects-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background: rgba(20, 30, 48, 0.9);
     text-align: center;
     padding: 20px;
-}
+  }
   
-/* Animation de pulsation pour l'overlay */
-@keyframes pulse {
+  /* Animation de pulsation pour l'overlay */
+  @keyframes pulse {
     0%, 100% { opacity: 0.7; }
     50% { opacity: 0.9; }
-}
+  }
   
-/* Responsive */
-@media (max-width: 768px) {
+  /* Responsive */
+  @media (max-width: 768px) {
     header h1 {
       font-size: 3em;
     }
     header p {
       font-size: 1.2em;
     }
-}
+  }
+  

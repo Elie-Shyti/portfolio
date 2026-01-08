@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Elie Shyti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="     " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                        primary: '#3b82f6',
+                        secondary: '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-50 top-0 left-0 bg-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl text-primary">&lt;Elie /&gt;</div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition">À propos</a>
+                        <a href="#competences" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition">Compétences</a>
+                        <a href="#parcours" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition">Parcours</a>
+                        <a href="#projets" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition">Projets</a>
+                        <a href="#veille" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition">Veille</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+                <h2 class="text-primary font-semibold tracking-wide uppercase">Portfolio</h2>
+                <h1 class="mt-2 text-4xl md:text-6xl font-bold tracking-tight text-white">
+                    Elie SHYTI
+                </h1>
+                <p class="mt-4 text-xl text-gray-400">
+                    Étudiant en BTS SIO option SLAM
+                </p>
+                <p class="mt-4 text-gray-400 max-w-lg mx-auto md:mx-0">
+                    Passionné par le développement web et l'informatique. Je conçois des solutions adaptées aux besoins des entreprises, du site vitrine à l'application métier.
+                </p>
+                <div class="mt-8 flex gap-4 justify-center md:justify-start">
+                    <a href="mailto:shytielie@yahoo.com" class="px-6 py-3 bg-primary hover:bg-blue-600 text-white font-medium rounded-lg transition shadow-lg shadow-blue-500/20">
+                        Me contacter
+                    </a>
+                    <a href="#projets" class="px-6 py-3 border border-gray-600 hover:border-primary hover:text-primary text-gray-300 font-medium rounded-lg transition">
+                        Voir mes projets
+                    </a>
+                </div>
+                <div class="mt-8 flex gap-6 justify-center md:justify-start text-gray-400">
+                    <a href="https://github.com/Elie-Shyti" class="hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/elie-shyti-47431630a/" class="hover:text-white transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <span class="text-sm self-center"><i class="fas fa-map-marker-alt mr-2"></i>Genilac (42800)</span>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/20">
+                    <img src="https://via.placeholder.com/400x400/1e293b/3b82f6?text=Elie+Shyti" alt="Elie Shyti" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-dark">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-primary pl-4">Présentation SLAM</h2>
+            <div class="glass-card p-8 rounded-xl">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Le BTS Services Informatiques aux Organisations (SIO) option <strong>Solutions Logicielles et Applications Métiers (SLAM)</strong> est ma spécialité. Elle forme des spécialistes capables de :
+                </p>
+                <ul class="mt-4 space-y-2 text-gray-400 list-disc list-inside">
+                    <li>Développer des applications web et logicielles.</li>
+                    <li>Concevoir et gérer des bases de données.</li>
+                    <li>Assurer la maintenance applicative.</li>
+                    <li>Adapter des solutions existantes aux besoins métiers.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="py-20 bg-card/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Compétences Techniques</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-card p-6 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-700">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-code mr-2"></i>Développement</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-blue-300">HTML5</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-blue-300">CSS3</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-yellow-300">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-purple-300">PHP</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-red-400">Laravel</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-orange-300">SQL</span>
+                    </div>
+                </div>
+
+                <div class="bg-card p-6 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-700">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-tools mr-2"></i>Logiciels</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Visual Studio Code</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Git</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">GitHub</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Premiere Pro</span>
+                    </div>
+                </div>
+
+                <div class="bg-card p-6 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-700">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-certificate mr-2"></i>Certifications</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> SecNumAcadémie (ANSSI)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Pix Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="py-20 bg-dark">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Mon Parcours</h2>
+            
+            <div class="relative border-l-4 border-gray-700 ml-3 space-y-12">
+                
+                <div class="mb-8 ml-8 relative">
+                    <span class="absolute -left-12 top-1 w-6 h-6 bg-primary rounded-full border-4 border-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Développeur Web - Stage 2ème année</h3>
+                    <span class="text-sm text-primary font-semibold">AMG (Industrie Ferroviaire & Militaire)</span>
+                    <p class="mt-2 text-gray-400">
+                        Conception d'une application de visite virtuelle de l'entreprise pour les clients (style Street View).
+                    </p>
+                    <div class="mt-3 flex gap-2">
+                        <span class="text-xs bg-gray-800 px-2 py-1 rounded text-gray-300">Visite Virtuelle</span>
+                        <span class="text-xs bg-gray-800 px-2 py-1 rounded text-gray-300">Web</span>
+                    </div>
+                </div>
+
+                <div class="mb-8 ml-8 relative">
+                    <span class="absolute -left-12 top-1 w-6 h-6 bg-secondary rounded-full border-4 border-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Développeur Web - Stage 1ère année</h3>
+                    <span class="text-sm text-primary font-semibold">Tipi Lodge (Location de chalets)</span>
+                    <p class="mt-2 text-gray-400">
+                        Création et mise en ligne du site vitrine de l'entreprise pour la location de chalets.
+                    </p>
+                    <a href="https://tipi-lodge.fr/" target="_blank" class="text-primary text-sm hover:underline mt-1 block">
+                        <i class="fas fa-link mr-1"></i> tipi-lodge.fr
+                    </a>
+                </div>
+
+                <div class="mb-8 ml-8 relative">
+                    <span class="absolute -left-12 top-1 w-6 h-6 bg-gray-500 rounded-full border-4 border-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Parcours Scolaire</h3>
+                    <span class="text-sm text-gray-400">Lycée Georges Brassens, Rive-de-Gier</span>
+                    <p class="mt-2 text-gray-400">
+                        <strong>2024 - Aujourd'hui :</strong> BTS SIO (Services Informatiques aux Organisations) Option SLAM.<br>
+                        <strong>2021 - 2024 :</strong> BAC STI2D (Sciences et Technologies de l'Industrie et du Développement Durable).
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-20 bg-card/30">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Mes Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Projet Netflix</h3>
+                        <p class="text-gray-400 mb-4">Reproduction de l'interface utilisateur de la plateforme de streaming (Front-end).</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs bg-red-900/30 text-red-300 px-2 py-1 rounded">HTML/CSS</span>
+                            <span class="text-xs bg-yellow-900/30 text-yellow-300 px-2 py-1 rounded">JS</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Site E-commerce</h3>
+                        <p class="text-gray-400 mb-4">Site de vente en ligne développé avec Laravel. Gestion panier, produits et admin.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs bg-red-900/30 text-red-300 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs bg-blue-900/30 text-blue-300 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Monopoly POO</h3>
+                        <p class="text-gray-400 mb-4">Jeu du Monopoly en Python. Utilisation de la Programmation Orientée Objet pour la logique de jeu.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs bg-blue-900/30 text-blue-300 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-900/30 text-blue-300 px-2 py-1 rounded">POO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Portfolio</h3>
+                        <p class="text-gray-400 mb-4">Ce site web personnel présentant mes compétences et réalisations.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs bg-blue-900/30 text-blue-300 px-2 py-1 rounded">HTML</span>
+                            <span class="text-xs bg-teal-900/30 text-teal-300 px-2 py-1 rounded">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="py-20 bg-dark">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Veille Technologique : La Blockchain</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-card p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold text-primary mb-2">Le concept</h3>
+                    <p class="text-gray-300 text-sm">
+                        La blockchain est une technologie de stockage et de transmission d'informations décentralisée. Elle permet des échanges sécurisés sans tiers de confiance grâce à un réseau de nœuds validateurs.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-card p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-white mb-2">Perspectives 2025</h4>
+                        <p class="text-gray-400 text-sm">
+                            Développement du modèle BaaS (Blockchain as a Service) pour les entreprises et expansion de la DeFi (Finance Décentralisée) vers de nouveaux secteurs comme l'immobilier et la santé.
+                        </p>
+                    </div>
+                    <div class="bg-card p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-white mb-2">Cadre Juridique</h4>
+                        <p class="text-gray-400 text-sm">
+                            La blockchain commence à être reconnue juridiquement. Exemple récent : Le tribunal de Marseille a validé l'horodatage blockchain comme preuve de droit d'auteur pour la marque AZ Factory.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-20 bg-card/30">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Mes Projets en Stage</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Site vitrine pour O tipi lodge
+                        </h3>
+                        <p class="text-gray-400 mb-4">Reproduction de l'interface utilisateur de la plateforme de streaming (Front-end).</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs bg-red-900/30 text-red-300 px-2 py-1 rounded">HTML/CSS</span>
+                            <span class="text-xs bg-yellow-900/30 text-yellow-300 px-2 py-1 rounded">JS</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl bg-dark border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Site E-commerce</h3>
+                        <p class="text-gray-400 mb-4">Site de vente en ligne développé avec Laravel. Gestion panier, produits et admin.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs bg-red-900/30 text-red-300 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs bg-blue-900/30 text-blue-300 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500">
+                &copy; 2026 Elie Shyti.
+            </p>
+            <div class="mt-4 flex justify-center space-x-6 text-gray-400">
+                <a href="mailto:shytielie@yahoo.com" class="hover:text-white"><i class="fas fa-envelope"></i> shytielie@yahoo.com</a>
+                <span class="hover:text-white"><i class="fas fa-phone"></i> 07 81 59 87 44</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
